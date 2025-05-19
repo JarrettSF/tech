@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(0, 255, 0, 0.7));
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(0, 255, 0, 1));
+    opacity: 1;
+  }
+
+  
+}
+
+@keyframes flickerGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(0, 255, 0, 0.6));
+    opacity: 0.8;
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(0, 255, 0, 1));
+    opacity: 1;
+  }
+}
+
+
+.bg-circuit-glow {
+  background-image: url('/b.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 255, 0, 0.05); /* way fainter */
+  background-blend-mode: overlay;
+}
+
+
+.flicker {
+  animation: flickerGlow 4s ease-in-out infinite;
+}
+
+.glow-green {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Custom background setup */
+body {
+  @apply bg-gray-900 text-white;
+  margin:0;
+  
+
+}
+
+.bg-motherboard {
+  background-image: url('/b.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* dark overlay with a pseudo element if you want more control */
+  /*  adjust bg-opacity on the header */
+}
+
+@layer utilities {
+  @keyframes deepPulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    }
+  }
+
+  .animate-deepPulse {
+    animation: deepPulse 2.5s ease-in-out infinite;
+  }
+}
+
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPop {
+  0%, 100% {
+    filter: drop-shadow(0 0 1px #00ff00) drop-shadow(0 0 2px #00ff00);
+  }
+  50% {
+    filter: drop-shadow(0 0 3px #00ff00) drop-shadow(0 0 5px #00ff00);
+  }
+}
+
+.glow-pop {
+  animation: glowPop 3s ease-in-out infinite;
+}
+
+@keyframes zoomGlowFade {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+    filter: drop-shadow(0 0 2px #00ff00);
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+    filter: drop-shadow(0 0 6px #00ff00);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 3px #00ff00);
+  }
+}
+
+.animate-zoomGlowFade {
+  animation: zoomGlowFade 1.5s ease-out forwards;
+}
+
+
+
+
+.photo-enter {
+  animation: slideFadeIn 1s ease forwards;
+}
+
+.impact-section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.impact-section.show {
+  display: block;
+  opacity: 1;
+}
+
+.impact-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.impact-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(0, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.impact-dot.active {
+  background-color: cyan;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+.bg-gradient-noise {
+  background-image:
+    linear-gradient(to bottom right, #111111, #1a1a1a, #111111),
+    url('/noise.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+
+
+
