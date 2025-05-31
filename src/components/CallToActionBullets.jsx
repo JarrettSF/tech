@@ -12,14 +12,21 @@ const bullets = [
   },
   {
     id: 2,
+    title: 'Tech Repair Services 🔧',
+    description:
+      'Got tech acting up? We got you. Cracked screens, slow laptops, random glitches—send us the details and we’ll take care of the rest. Quick fixes, fair prices, and no stress.',
+    icon: '/q.jpg',
+  },
+  {
+    id: 3,
     title: 'Web Design & Digital Growth 🌐📈',
     description:
       'We build custom websites and digital tools for nonprofits and small businesses, and offer low-cost classes so you can level up your own digital game.',
     icon: '/j.jpg',
   },
   {
-    id: 3,
-    title: 'Meet Tech Support 🔧💻 & Founder',
+    id: 4,
+    title: 'Meet Tech Support 🥂 & Founder',
     description:'I am the people we are impacting together.',
     icon: '/M.jpg',
   },

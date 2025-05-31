@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const images = ['/c.jpg', '/k.jpg', '/l.jpg', '/e.jpg']; //  images
+const images = ['/c.jpg', '/k.jpg', '/l.jpg', '/p.jpg', '/s.jpg', '/t.jpg', '/e.jpg']; //  images
 
 function HeroPhoto() {
   const [index, setIndex] = useState(0);

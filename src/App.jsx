@@ -15,8 +15,9 @@ function App() {
 
   const donationLinks = {
     1: 'https://forms.gle/qii5d4PqUfwakxNUA',
-    2: 'https://forms.gle/MVHXtnGQTKjqKDcQ6',
-    3: 'https://forms.gle/qii5d4PqUfwakxNUA',
+    2: 'https://forms.gle/GSNzGsia1oWoZpF69',
+    3: 'https://forms.gle/MVHXtnGQTKjqKDcQ6',
+    4: 'https://forms.gle/qii5d4PqUfwakxNUA',
   };
 
   const bulletContents = {
@@ -27,19 +28,27 @@ function App() {
       image: '/d.jpg',
       alt: 'Refurbished laptops ready for donation',
     },
-    2: {
+	   2: {
+      title: 'Fast, Reliable Tech Repairs You Can Trust',
+      content:
+        'Cracked screens, dead batteries, slow laptops—whatever it is, we’ll fix it fast and at a price that makes sense. No gimmicks, just solid work. 10% of the cost of goods used for repairs goes to Foster Love Youth charity, and the rest supports our mission to provide tech access to those who need it most.',
+      image: '/r.jpg',
+      alt: 'We repair laptops and phones',
+    },
+    
+    3: {
       title: '💡 Learn & Launch — Free Classes + Web Help',
       content:
-        'We offer free classes in web design and CompTIA A+ to help you level up or launch a new career — no cost, just bring your curiosity. Need a website? We also provide free web design services for community orgs and small businesses.💸 Donations are welcome but never required. Impact first.',
+        'We offer free classes in web design and CompTIA A+ to help you level up or launch a new career — no cost, just bring your curiosity. Need a website? We also provide free web design services for community orgs and small businesses.💸 Donations are welcome but never required. 10% of the cost of goods used for training goes to Foster Love Youth charity, and the rest supports the mission to provide tech access to those who need it most.',
       image: '/i.jpg',
       alt: 'Students learning web design and tech skills',
     },
-    3: {
+    4: {
       title: 'Mission-Driven Hustle',
       content:
-        'Life came at me fast; foster care, operating rooms, jail, chaos...  So what, right. Inner City Tech is how I look life in the eyes and ask for more speed please sir. It’s how I turn my skills and scars into support for others to rise. I am from Maryland. I have always had a curiosity about electronics, but life didn’t immediately make space for my dreams. I aged out of foster care, picked up a felony, and became a statistic - vagrant — but I kept learning. Eventually, I picked up a degree - cum laude, and Inner City Tech became a way.',
+        'Life came at me fast; foster care, operating rooms, jail, chaos...  So what, right. So what is exactly right, without challenges - what will we hope for? At the core, Inner City Tech represents hope. Me having enough hope to reach you, and faith that you beleive in and will support the mission. I have always had a curiosity about electronics, but life didn’t immediately make space for my dreams. I aged out of foster care, crashed into the system, and became a statistic - but hope is persistent. Eventually, I picked up a degree - cum laude, and Inner City Tech became a way for me, and now us, to stand behind an impact first product; seeded by the underserved, for the underserved. Now, unfortunately, faith and hope alone are not enough, you have to act now. Thank you for finding an avenue to support Inner City Tech.',
       image: '/o.jpg',
-      alt: 'Founder of Inner City Tech sharing his story',
+      alt: 'Founder of Inner City Techs sharing his story',
     },
   };
 
@@ -147,7 +156,7 @@ function App() {
             id="empowerment-heading"
             className="text-3xl font-extrabold bg-gradient-to-r from-green-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg mb-6 text-center"
           >
-            Empowering Communities Through Tech Donations
+            Every Service Powers a Cause
           </h2>
           <HeroPhoto />
         </section>
