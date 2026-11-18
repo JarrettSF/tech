@@ -1,4 +1,4 @@
-#This is the inner city tech web application
+#This is the inner city tech web application, please open the SRC folder for more code and details.
 
 # React + Vite
 
