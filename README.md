@@ -1,4 +1,27 @@
-#This is the inner city tech web application, please open the SRC folder for more code and details.
+# Inner City Tech Website
+
+React-based website developed for Inner City Tech.
+
+Features:
+- Responsive React components
+- Dynamic content rendering
+- Reusable component architecture
+- Modern UI interactions and animations
+
+Technologies:
+- React
+- JavaScript
+- CSS
+
+My Contributions:
+- Built reusable front-end components
+- Implemented responsive layouts
+- Developed interactive user-facing features
+- Organized component structure for maintainability
+
+To run locally:
+npm install
+npm start
 
 # React + Vite
 
